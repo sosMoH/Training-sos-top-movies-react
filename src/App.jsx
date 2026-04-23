@@ -24,7 +24,7 @@ const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const [trendingMovies, setTrendingMovies] = useState([]);
 
   // Debounce to prevent making too many API requests by waiting for 1000ms after stop typing
@@ -92,7 +92,7 @@ const App = () => {
 
       <div className='wrapper'>
         <header>
-          <img src="../public/hero.png" alt="" />
+          <img src="/hero.png" alt="" />
           <h1>Find <span className='text-gradient'>Movies</span> You'll Enjoy Without the Hassle</h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
